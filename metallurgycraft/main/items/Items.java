@@ -24,12 +24,13 @@ public class Items {
 	public static Item beam17NiCrMo, beamHSS18, beamAISI316, beamC45; 
 	public static Item screwM20in109, nutM20in109;
 	public static Item hssMachiningTool, oxyFuelWeldingKit, oRing, sandCastingKit, forgingKit;
-	public static Item weldedCasingC45, turnedBar17NiCrMo, toleratedTube17NiCrMo, trackShoes, chainBody, structuralBeamC45,
+	public static Item weldedCasingC45, turnedBar17NiCrMo, toleratedTube17NiCrMo;
+	/*public static Item trackShoes, chainBody, structuralBeamC45,
 						pistonHead, forgedRod, threadedLinkedPlateC45, gear17NiCrMo, wheel17NiCrMo, idler17NiCrMo, bronzeBushing, pin,
 						pipingAISI316, tankFrameStainlessSteel, tankWallStainlessSteel, casingTurboCompressor, bladesTurboCompressor,
 						casingDieselPump, casingFeedwaterPump, engineBlock, frameKitC45, shaft17NiCrMo, trackRoller, tankShellStainlessSteel,
 						quenched17NiCrMnoGear, sprocket, rod, frame, chain, chainAssembly, trackedCrawler, completePistonHead, planetaryGearbox,
-						stainlessSteelTank, plateReinforcedAISI316, weldedFrameC45;
+						stainlessSteelTank, plateReinforcedAISI316, weldedFrameC45;*/
 	
 	
 	public static void initItems() {
@@ -84,22 +85,18 @@ public class Items {
 		beam17NiCrMo = new ItemGeneric(16617, 17, "beam17NiCrMo", 64);
 		beamHSS18 = new ItemGeneric(16618, 18, "beamHSS18", 64);
 		beamAISI316 = new ItemGeneric(16619, 19, "beamAISI316", 64);
-		beamC45 = new ItemGeneric(16620, 20, "beamC45", 64);//arrivato qua
-		screwM20in109 = new ItemGeneric(16623, 23, "screwM20in109", 64);
-		nutM20in109 = new ItemGeneric(16624, 24, "nutM20in109", 64);
-		hssMachiningTool = new ItemGeneric(16625, 25, "hssMachiningTool", 64);
-		oxyFuelWeldingKit = new ItemGeneric(16626, 26, "oxyFuelWeldingKit", 64);
-		oRing = new ItemGeneric(16627, 27, "oRing", 64);
-		sandCastingKit = new ItemGeneric(16628, 28, "sandCastingKit", 64);
-		forgingKit = new ItemGeneric(16629, 29, "forgingKit", 64);
-		weldedCasingC45 = new ItemGeneric(16630, 30, "weldedCasingC45", 64);
-		turnedBar17NiCrMo = new ItemGeneric(16631, 31, "turnedBar17NiCrMo", 64);
-		toleratedTube17NiCrMo = new ItemGeneric(16632, 32, "toleratedTube17NiCrMo", 64);
-		trackShoes = new ItemGeneric(16633, 33, "trackShoes", 64);
-		chainBody = new ItemGeneric(16634, 34, "chainBody", 64);
-		structuralBeamC45 = new ItemGeneric(16635, 35, "structuralBeamC45", 64);
-		turnedBar17NiCrMo = new ItemGeneric(16636, 36, "turnedBar17NiCrMo", 64);
-		toleratedTube17NiCrMo = new ItemGeneric(16637, 37, "toleratedTube17NiCrMo", 64);
+		beamC45 = new ItemGeneric(16620, 20, "beamC45", 64);
+		screwM20in109 = new ItemGeneric(16621, 21, "screwM20in109", 64);
+		nutM20in109 = new ItemGeneric(16622, 22, "nutM20in109", 64);
+		hssMachiningTool = new ItemGeneric(16623, 23, "hssMachiningTool", 64);
+		oxyFuelWeldingKit = new ItemGeneric(16624, 24, "oxyFuelWeldingKit", 64);
+		oRing = new ItemGeneric(16625, 25, "oRing", 64);
+		sandCastingKit = new ItemGeneric(16626, 26, "sandCastingKit", 64);
+		forgingKit = new ItemGeneric(16627, 27, "forgingKit", 64);
+		weldedCasingC45 = new ItemGeneric(16628, 28, "weldedCasingC45", 64);
+		turnedBar17NiCrMo = new ItemGeneric(16629, 29, "turnedBar17NiCrMo", 64);
+		toleratedTube17NiCrMo = new ItemGeneric(16630, 30, "toleratedTube17NiCrMo", 64);
+		/*
 		trackShoes = new ItemGeneric(16638, 38, "trackShoes", 64);
 		structuralBeamC45 = new ItemGeneric(16639, 39, "chainBody", 64);
 		chainBody = new ItemGeneric(16643, 43, "chainBody", 64);
@@ -133,7 +130,7 @@ public class Items {
 		completePistonHead = new ItemGeneric(16671, 71, "completePistonHead", 64);
 		planetaryGearbox = new ItemGeneric(16672, 72, "planetaryGearbox", 64);
 		stainlessSteelTank = new ItemGeneric(16673, 73, "stainlessSteelTank", 64);
-		plateReinforcedAISI316 = new ItemGeneric(16674, 74, "plateReinforcedAISI316", 64); //Da dire a Piccio per la texture
+		plateReinforcedAISI316 = new ItemGeneric(16674, 74, "plateReinforcedAISI316", 64);*/ //Da dire a Piccio per la texture
 
 	}
 
@@ -200,11 +197,7 @@ public class Items {
 		LanguageRegistry.addName(weldedCasingC45, "C45 Steel Welded Casing");
 		LanguageRegistry.addName(turnedBar17NiCrMo, "17NiCrMo Steel Turned Bar");
 		LanguageRegistry.addName(toleratedTube17NiCrMo, "17NiCrMo Steel Tolerated Tube");
-		LanguageRegistry.addName(trackShoes, "Track Shoes");
-		LanguageRegistry.addName(chainBody, "Chain Body");
-		LanguageRegistry.addName(structuralBeamC45, "C45 Steel Structural Beam");
-		LanguageRegistry.addName(turnedBar17NiCrMo, "17NiCrMo Steel Turned Bar");
-		LanguageRegistry.addName(toleratedTube17NiCrMo, "17NiCrMo Steel Tolerated Tube");
+		/*
 		LanguageRegistry.addName(trackShoes, "Track Shoes");
 		LanguageRegistry.addName(structuralBeamC45, "C45 Steel Structural Beam");
 		LanguageRegistry.addName(pistonHead, "Piston Head");
@@ -237,7 +230,7 @@ public class Items {
 		LanguageRegistry.addName(completePistonHead, "Complete Piston Head");
 		LanguageRegistry.addName(planetaryGearbox, "Planetary Gearbox");
 		LanguageRegistry.addName(stainlessSteelTank, "Stainless Steel Tank");
-		LanguageRegistry.addName(plateReinforcedAISI316, "Reinforced AISI316 Steel Plate"); 
+		LanguageRegistry.addName(plateReinforcedAISI316, "Reinforced AISI316 Steel Plate"); */
 	}
 }
 

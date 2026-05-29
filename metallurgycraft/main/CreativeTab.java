@@ -26,7 +26,7 @@ public class CreativeTab extends CreativeTabs {
 	@SideOnly(Side.CLIENT) 
 	public ItemStack getIconItemStack() {
 		if(this.name == tabMetallurgy.getTabLabel()) {
-			return new ItemStack(Item.appleGold);
+			return new ItemStack(Items.limedIronOre);
 		}
 		return null;
 	}

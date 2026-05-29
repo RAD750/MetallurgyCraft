@@ -23,7 +23,7 @@ public class ItemCell extends Item {
 		 * @param maxStackSize Max stack size
 		 * @return Item.
 		 */
-		this.setTextureFile("/oilgasoverhaul/textures/Cells.png");
+		this.setTextureFile("/metallurgycraft/textures/cells.png");
 		this.setIconIndex(textureId);
 		this.setCreativeTab(CreativeTab.tabMetallurgy);
 		this.setItemName(itemName);

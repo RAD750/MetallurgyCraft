@@ -16,7 +16,8 @@ public class Items {
 	public static Item ingotPigIron, ingotImpureMildSteel, ingotDegassedMildSteel, ingotDesulfuredSteel, ingotMildSteel, ingot17NiCrMo, ingotHSS18, ingotAISI316, ingotC45;
 	public static Item billetPigIron, billetImpureMildSteel, billetDegassedMildSteel, billetDesulfuredSteel, billetMildSteel, billet17NiCrMo, billetHSS18, billetAISI316, billetC45;
 	public static Item dust17NiCrMoMix, dustHSS18Mix, dustAISI316Mix, dustC45Mix;
-	public static Item fuelKit, plate17NiCrMo, plateHSS18, plateAISI316, plateC45;
+	public static Item plate17NiCrMo, plateHSS18, plateAISI316, plateC45;
+	public static Item fuelKit;
 	public static Item bar17NiCrMo, barHSS18, barAISI316, barC45; 
 	public static Item tube17NiCrMo, tubeHSS18, tubeAISI316, tubeC45;
 	public static Item holedPlate17NiCrMo, holedPlateHSS18, holedPlateAISI316, holedPlateC45;
@@ -34,34 +35,34 @@ public class Items {
 	public static void initItems() {
 		burntLimeCell = new ItemCell(16500, 0, "burntLimeCell", 64, "CaO");
 		
-		mixedIronOxides = new ItemOreChunks(16510, 0, "mixedIronOxides", 64, null);
-		purifiedIronOre = new ItemOreChunks(16511,1 , "purifiedIronOre", 64, null);
-		limedIronOre = new ItemOreChunks(16511, 2, "limedIronOre", 64, null);
+		mixedIronOxides = new ItemOreChunks(16510, 0, "mixedIronOxides", 64, "Magnetite, Ematite, Goethite, Siderite");
+		purifiedIronOre = new ItemOreChunks(16511,1 , "purifiedIronOre", 64, "Electrolytic Purification");
+		limedIronOre = new ItemOreChunks(16511, 2, "limedIronOre", 64, "To Be Used in Basic Oxygen Steelmaking");
 		
-		ingotPigIron = new ItemIngot(16520, 0, "ingotPigIron", 64, null);
-		ingotImpureMildSteel = new ItemIngot(16521, 1, "ingotImpureMildSteel", 64, null);
-		ingotDegassedMildSteel = new ItemIngot(16522, 2, "ingotDegassedMildSteel", 64, null);
-		ingotDesulfuredSteel = new ItemIngot(16523, 3, "ingotDesulfuredSteel", 64, null);
-		ingotMildSteel = new ItemIngot(16524, 4, "ingotMildSteel", 64, null);
-		ingot17NiCrMo = new ItemIngot(16525, 5, "ingot17NiCrMo", 64, null);
+		ingotPigIron = new ItemIngot(16520, 0, "ingotPigIron", 64, "4% C");
+		ingotImpureMildSteel = new ItemIngot(16521, 1, "ingotImpureMildSteel", 64, "0.3% C");
+		ingotDegassedMildSteel = new ItemIngot(16522, 2, "ingotDegassedMildSteel", 64, "0.3% C");
+		ingotDesulfuredSteel = new ItemIngot(16523, 3, "ingotDesulfuredSteel", 64, "0.2% C"); //
+		ingotMildSteel = new ItemIngot(16524, 4, "ingotMildSteel", 64, "0.3% C");
+		ingot17NiCrMo = new ItemIngot(16525, 5, "ingot17NiCrMo", 64, "Case Hardening Steel");
 		ingotHSS18 = new ItemIngot(16526, 6, "ingotHSS18", 64, "High Speed Steel");
 		ingotAISI316 = new ItemIngot(16527, 7, "ingotAISI316", 64, "Stainless Steel"); 
-		ingotC45 = new ItemIngot(16528, 8, "ingotC45", 64, null);
+		ingotC45 = new ItemIngot(16528, 8, "ingotC45", 64, "High Strength Steel");
 		
-		billetPigIron = new ItemIngot(16536, 16, "billetPigIron", 64, null);
-		billetImpureMildSteel = new ItemIngot(16537, 17, "billetImpureMildSteel", 64, null);
-		billetDegassedMildSteel = new ItemIngot(16538, 18, "billetDegassedMildSteel", 64, null);
-		billetDesulfuredSteel = new ItemIngot(16539, 19, "billetDesulfuredSteel", 64, null);
-		billetMildSteel = new ItemIngot(16540, 20, "billetMildSteel", 64, null);
-		billet17NiCrMo = new ItemIngot(16541, 21, "billet17NiCrMo", 64, null);
+		billetPigIron = new ItemIngot(16536, 16, "billetPigIron", 64, "4% C");
+		billetImpureMildSteel = new ItemIngot(16537, 17, "billetImpureMildSteel", 64, "0.3% C");
+		billetDegassedMildSteel = new ItemIngot(16538, 18, "billetDegassedMildSteel", 64, "0.3% C");
+		billetDesulfuredSteel = new ItemIngot(16539, 19, "billetDesulfuredSteel", 64, "0.2% C");
+		billetMildSteel = new ItemIngot(16540, 20, "billetMildSteel", 64, "0.3% C");
+		billet17NiCrMo = new ItemIngot(16541, 21, "billet17NiCrMo", 64, "Case Hardening Steel");
 		billetHSS18 = new ItemIngot(16542, 22, "billetHSS18", 64, "High Speed Steel");
 		billetAISI316 = new ItemIngot(16543, 23, "billetAISI316", 64, "Stainless Steel"); 
-		billetC45 = new ItemIngot(16544, 24, "billetC45", 64, null);
+		billetC45 = new ItemIngot(16544, 24, "billetC45", 64, "High Strength Steel");
 		
-		dust17NiCrMoMix = new ItemDust(16550, 0, "dust17NiCrMoMix", 64, null);
-		dustHSS18Mix = new ItemDust(16551, 1, "dustHSS18Mix", 64, null);
-		dustAISI316Mix = new ItemDust(16552, 2, "dustAISI316Mix", 64, null);
-		dustC45Mix = new ItemDust(16553, 3, "dustC45Mix", 64, null);
+		dust17NiCrMoMix = new ItemDust(16550, 0, "dust17NiCrMoMix", 64, "Alloy Mixture");
+		dustHSS18Mix = new ItemDust(16551, 1, "dustHSS18Mix", 64, "Alloy Mixture");
+		dustAISI316Mix = new ItemDust(16552, 2, "dustAISI316Mix", 64, "Alloy Mixture");
+		dustC45Mix = new ItemDust(16553, 3, "dustC45Mix", 64, "Alloy Mixture");
 		
 		fuelKit = new ItemGeneric(16600, 0, "fuelKit", 64);
 		plate17NiCrMo = new ItemGeneric(16601, 1, "plate17NiCrMo", 64);
@@ -83,7 +84,7 @@ public class Items {
 		beam17NiCrMo = new ItemGeneric(16617, 17, "beam17NiCrMo", 64);
 		beamHSS18 = new ItemGeneric(16618, 18, "beamHSS18", 64);
 		beamAISI316 = new ItemGeneric(16619, 19, "beamAISI316", 64);
-		beamC45 = new ItemGeneric(16620, 20, "beamC45", 64);
+		beamC45 = new ItemGeneric(16620, 20, "beamC45", 64);//arrivato qua
 		screwM20in109 = new ItemGeneric(16623, 23, "screwM20in109", 64);
 		nutM20in109 = new ItemGeneric(16624, 24, "nutM20in109", 64);
 		hssMachiningTool = new ItemGeneric(16625, 25, "hssMachiningTool", 64);

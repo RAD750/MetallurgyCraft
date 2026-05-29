@@ -79,30 +79,31 @@ public class CraftingHandler {
 			Main.metallurgyLog.severe("Cannot register recipes, EnhancedGeology missing");
 		}
 		
-		GregtechCompat.addChemicalRecipe(new ItemStack(Items.purifiedIronOre), new ItemStack(Items.burntLimeCell), new ItemStack(Items.limedIronOre), 500);
+		GregtechCompat.addChemicalRecipe(new ItemStack(Items.purifiedIronOre), new ItemStack(Items.burntLimeCell), new ItemStack(Items.limedIronOre), 200);
 		RailcraftCraftingManager.blastFurnace.addRecipe(Items.limedIronOre.itemID, 600, new ItemStack(Items.ingotPigIron));
 		
 		ItemStack cellLiquidOxygen = CraftingHelpers.getOreDict("cellLiquidOxygen");
 
 		if (cellLiquidOxygen != null) {
-			GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotPigIron), cellLiquidOxygen, new ItemStack(Items.ingotImpureMildSteel), null, 800, 1100, 1900);
+			GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotPigIron), cellLiquidOxygen, new ItemStack(Items.ingotImpureMildSteel), null, 100, 3300, 1900);
 		}
 		
 		
 		// METALLURGIA SECONDARIA
 		
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotImpureMildSteel), GregtechCompat.getGregTechItem(2, 1, 15), new ItemStack(Items.ingotDegassedMildSteel), null, 800, 400, 1300);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotDegassedMildSteel), null, new ItemStack(Items.ingotDesulfuredSteel), null, 800, 400, 1300);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotDesulfuredSteel), null, new ItemStack(Items.ingotMildSteel), null, 800, 400, 1300);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotImpureMildSteel), GregtechCompat.getGregTechItem(2, 1, 15), new ItemStack(Items.ingotDegassedMildSteel), null, 200, 600, 1300);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotDegassedMildSteel), null, new ItemStack(Items.ingotDesulfuredSteel), null, 300, 600, 1300);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotDesulfuredSteel), null, new ItemStack(Items.ingotMildSteel), null, 300, 600, 1300);
 		
-		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 4, 20), GregtechCompat.getGregTechItem(1, 4, 28), new ItemStack(Items.dust17NiCrMoMix), 800);
-		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 8, 22), GregtechCompat.getGregTechItem(1, 4, 20), new ItemStack(Items.dustHSS18Mix), 800);
-		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 2, 22), GregtechCompat.getGregTechItem(1, 8, 28), new ItemStack(Items.dustAISI316Mix), 800);
-		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 8, 240), GregtechCompat.getGregTechItem(1, 8, 12), new ItemStack(Items.dustC45Mix), 800);
+		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 4, 20), GregtechCompat.getGregTechItem(1, 4, 28), new ItemStack(Items.dust17NiCrMoMix), 200);
+		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 8, 22), GregtechCompat.getGregTechItem(1, 4, 20), new ItemStack(Items.dustHSS18Mix), 200);
+		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 2, 22), GregtechCompat.getGregTechItem(1, 8, 28), new ItemStack(Items.dustAISI316Mix), 200);
+		GregtechCompat.addChemicalRecipe(GregtechCompat.getGregTechItem(1, 8, 240), GregtechCompat.getGregTechItem(1, 8, 12), new ItemStack(Items.dustC45Mix), 200);
 		
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dust17NiCrMoMix, 1), new ItemStack(Items.ingot17NiCrMo, 1), null, 1600, 400, 1770);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dustHSS18Mix, 1), new ItemStack(Items.ingotHSS18, 1), null, 1600, 400, 1770);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dustAISI316Mix, 1), new ItemStack(Items.ingotAISI316, 1), null, 1600, 400, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dust17NiCrMoMix, 1), new ItemStack(Items.ingot17NiCrMo, 1), null, 600, 800, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dustHSS18Mix, 1), new ItemStack(Items.ingotHSS18, 1), null, 600, 800, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dustAISI316Mix, 1), new ItemStack(Items.ingotAISI316, 1), null, 800, 400, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotMildSteel), new ItemStack(Items.dustC45Mix, 1), new ItemStack(Items.ingotC45, 1), null, 600, 800, 1770);
 
 
 		// METALLURGIA TERZIARIA
@@ -118,39 +119,39 @@ public class CraftingHandler {
 		
 		if (paraffinCell != null && condensateCell != null && gasolineCell != null && naphthaCell != null && lpgCell != null && e85GasCell != null && hfoCell != null) {
 			ItemStack emptyFuelCan = ic2.api.Items.getItem("fuelCan").copy();
-			emptyFuelCan.stackSize = 64;
-			paraffinCell.stackSize = 64;
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, paraffinCell, new ItemStack(Items.fuelKit), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, condensateCell, new ItemStack(Items.fuelKit), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, gasolineCell, new ItemStack(Items.fuelKit), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, methaneCell, new ItemStack(Items.fuelKit), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, naphthaCell, new ItemStack(Items.fuelKit, 2), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, lpgCell, new ItemStack(Items.fuelKit, 3), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, e85GasCell, new ItemStack(Items.fuelKit, 3), 1200, 25);
-			GregtechCompat.addAssemblerRecipe(emptyFuelCan, hfoCell, new ItemStack(Items.fuelKit, 4), 1200, 25);
+			emptyFuelCan.stackSize = 1;
+			paraffinCell.stackSize = 1;
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, paraffinCell, new ItemStack(Items.fuelKit), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, condensateCell, new ItemStack(Items.fuelKit), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, gasolineCell, new ItemStack(Items.fuelKit), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, methaneCell, new ItemStack(Items.fuelKit), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, naphthaCell, new ItemStack(Items.fuelKit, 2), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, lpgCell, new ItemStack(Items.fuelKit, 3), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, e85GasCell, new ItemStack(Items.fuelKit, 3), 300, 25);
+			GregtechCompat.addAssemblerRecipe(emptyFuelCan, hfoCell, new ItemStack(Items.fuelKit, 4), 300, 25);
 		} else {
 			Main.metallurgyLog.severe("Cannot register recipes, Oil & Gas Overhaul missing");
 		}
 		
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingot17NiCrMo), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.billet17NiCrMo), null, 900, 256, 1770);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotAISI316), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.billetAISI316), null, 900, 256, 1770);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotHSS18), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.billetHSS18), null, 900, 256, 1770);
-		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotC45), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.billetC45), null, 900, 256, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingot17NiCrMo), null, new ItemStack(Items.billet17NiCrMo), null, 900, 256, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotAISI316), null, new ItemStack(Items.billetAISI316), null, 900, 256, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotHSS18), null, new ItemStack(Items.billetHSS18), null, 900, 256, 1770);
+		GregtechCompat.addBlastRecipe(new ItemStack(Items.ingotC45), null, new ItemStack(Items.billetC45), null, 900, 256, 1770);
 		
-		GregtechCompat.addBenderRecipe(new ItemStack(Items.billet17NiCrMo), new ItemStack(Items.plate17NiCrMo), 1000, 128);
-		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetAISI316), new ItemStack(Items.plateAISI316), 1000, 128);
-		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetHSS18), new ItemStack(Items.plateHSS18), 1000, 128);
-		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetC45), new ItemStack(Items.plateC45), 1000, 128);
+		GregtechCompat.addBenderRecipe(new ItemStack(Items.billet17NiCrMo), new ItemStack(Items.plate17NiCrMo), 100, 128);
+		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetAISI316), new ItemStack(Items.plateAISI316), 100, 128);
+		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetHSS18), new ItemStack(Items.plateHSS18), 100, 128);
+		GregtechCompat.addBenderRecipe(new ItemStack(Items.billetC45), new ItemStack(Items.plateC45), 100, 128);
 		
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billet17NiCrMo), new ItemStack(Items.bar17NiCrMo), 1000, 128);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetAISI316), new ItemStack(Items.barAISI316), 1000, 128);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetHSS18), new ItemStack(Items.barHSS18), 1000, 128);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetC45), new ItemStack(Items.barC45), 1000, 128);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billet17NiCrMo), new ItemStack(Items.bar17NiCrMo), 100, 128);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetAISI316), new ItemStack(Items.barAISI316), 100, 128);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetHSS18), new ItemStack(Items.barHSS18), 100, 128);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.billetC45), new ItemStack(Items.barC45), 100, 128);
 
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.bar17NiCrMo), new ItemStack(Items.tube17NiCrMo), 600, 60);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barAISI316), new ItemStack(Items.tubeAISI316), 600, 60);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barHSS18), new ItemStack(Items.tubeHSS18), 600, 60);
-		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barC45), new ItemStack(Items.tubeC45), 600, 60);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.bar17NiCrMo), new ItemStack(Items.tube17NiCrMo), 200, 60);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barAISI316), new ItemStack(Items.tubeAISI316), 200, 60);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barHSS18), new ItemStack(Items.tubeHSS18), 200, 60);
+		GregtechCompat.addWiremillRecipe(new ItemStack(Items.barC45), new ItemStack(Items.tubeC45), 200, 60);
 		
 		
 		// CARPENTERIA
@@ -175,11 +176,11 @@ public class CraftingHandler {
 			GregtechCompat.addWiremillRecipe(rubber, new ItemStack(Items.oRing), 200, 32);
 		}
 		
-		GregtechCompat.addAssemblerRecipe(new ItemStack(Block.sandStone, 64), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.sandCastingKit), 120, 128);
+		GregtechCompat.addAssemblerRecipe(new ItemStack(Block.sandStone, 64), new ItemStack(Items.fuelKit), new ItemStack(Items.sandCastingKit), 120, 128);
 		GameRegistry.addShapedRecipe(new ItemStack(Items.plateReinforcedAISI316), new Object[] {
 				"###", "###", "###", '#', Items.plateAISI316
 		});
-		GregtechCompat.addAssemblerRecipe(new ItemStack(Items.plateReinforcedAISI316, 16), new ItemStack(Items.fuelKit, 64), new ItemStack(Items.forgingKit), 120, 128);			
+		GregtechCompat.addAssemblerRecipe(new ItemStack(Items.plateReinforcedAISI316, 16), new ItemStack(Items.fuelKit), new ItemStack(Items.forgingKit), 120, 128);			
 		GregtechCompat.addAssemblerRecipe(new ItemStack(Items.plateAISI316, 4), new ItemStack(Items.hssMachiningTool), new ItemStack(Items.holedPlateAISI316, 4), 120, 6);
 		GregtechCompat.addAssemblerRecipe(new ItemStack(Items.plateC45, 4), new ItemStack(Items.hssMachiningTool), new ItemStack(Items.holedPlateC45, 4), 120, 6);
 		GregtechCompat.addAssemblerRecipe(new ItemStack(Items.plateC45, 4), new ItemStack(Items.oxyFuelWeldingKit), new ItemStack(Items.weldedCasingC45, 4), 120, 6);

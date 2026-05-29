@@ -23,7 +23,7 @@ public class ItemDust extends Item {
 		 * @param maxStackSize Max stack size
 		 * @return Item.
 		 */
-		this.setTextureFile("/oilgasoverhaul/textures/Dusts.png");
+		this.setTextureFile("/metallurgycraft/textures/dusts.png");
 		this.setIconIndex(textureId);
 		this.setCreativeTab(CreativeTab.tabMetallurgy);
 		this.setItemName(itemName);

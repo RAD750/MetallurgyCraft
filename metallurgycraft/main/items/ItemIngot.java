@@ -23,7 +23,7 @@ public class ItemIngot extends Item {
 		 * @param maxStackSize Max stack size
 		 * @return Item.
 		 */
-		this.setTextureFile("/oilgasoverhaul/textures/Ingots.png");
+		this.setTextureFile("/metallurgycraft/textures/ingots.png");
 		this.setIconIndex(textureId);
 		this.setCreativeTab(CreativeTab.tabMetallurgy);
 		this.setItemName(itemName);

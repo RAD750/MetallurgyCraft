@@ -15,7 +15,7 @@ public class ItemGeneric extends Item {
 		 * @param maxStackSize Max stack size
 		 * @return Item.
 		 */
-		this.setTextureFile("/oilgasoverhaul/textures/Items.png");
+		this.setTextureFile("/metallurgycraft/textures/items.png");
 		this.setIconIndex(textureId);
 		this.setCreativeTab(CreativeTab.tabMetallurgy);
 		this.setItemName(itemName);

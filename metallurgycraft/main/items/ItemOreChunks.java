@@ -23,7 +23,7 @@ public class ItemOreChunks extends Item {
 		 * @param maxStackSize Max stack size
 		 * @return Item.
 		 */
-		this.setTextureFile("/oilgasoverhaul/textures/OreChunks.png");
+		this.setTextureFile("/metallurgycraft/textures/orechunks.png");
 		this.setIconIndex(textureId);
 		this.setCreativeTab(CreativeTab.tabMetallurgy);
 		this.setItemName(itemName);
